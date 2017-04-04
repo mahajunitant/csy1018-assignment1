@@ -1,0 +1,126 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+header{
+  background-color: black;
+  color: white;
+  height: 190px;
+  padding-top: 25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;/*this used for giving space between two content*/
+}
+.name{
+  padding-left: 95px;
+}
+.name h2{
+  position: relative;/*this is used for specifying the type of positioning method used for an element */
+  top: -19px;
+  font-family: 'Jim Nightshade', cursive;
+}
+.details{
+  padding-right: 95px;/*this is used for generating space from the rightside*/
+}
+.details p{
+  position: relative;
+  top: -10px;
+  font-family: 'Satisfy', cursive;
+}
+nav{
+  background: -webkit-linear-gradient(left top,#03A9F4, #00BCD4, #4D86AC);
+}
+nav ul{
+  display: flex;
+  flex-direction: row;/*this is used for keeping items side to side */
+    padding-left: 280px;
+}
+nav ul li{
+  height: 45px;
+  position: relative;/*this is used for specifying the type of positioning method used for an element */
+  top: 13px;
+  padding-left: 125px;
+  list-style-type: none;
+    width: 85px;
+}
+nav ul li a{
+
+  text-decoration: none;
+  color:black;
+  font-size: 18px;
+}
+.active{
+  color:#FFFFFF;
+}
+section{
+  background-image: url("../images/squad.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  height: 950px;
+}
+section h2{
+  font-family: 'Boogaloo', cursive;
+  position: relative;/*this is used for specifying the type of positioning method used for an element */
+  top:50px;
+  left:430px;
+  font-size: 50px;
+  color:#455A64;
+}
+.first-one{
+  position: relative;
+  top: 12%;
+  left: 25%;
+  height: 650px;
+  width: 650px;
+  background-color: white;
+  box-shadow: 5px 5px 5px gray;
+  opacity: 0.7;
+  font-size: 25px;
+  padding-left: 60px;
+}
+.last-one{
+  display: flex;
+  position: relative;/*this is used for specifying the type of positioning method used for an element */
+  top: -450px;
+  left:385px;
+}
+.social-media img{
+  height: 55px;
+  width: 55px;
+  transition: all 2s;/*this is used for specifying how many seconds or milliseconds a transition will take place*/
+}
+.social-media{
+  width: 5%;
+  display: flex;
+  flex-direction: column;
+}
+.social-media img:hover{
+  transform: rotate(360deg);/*this is used for rotating the specified item */
+}
+.text{
+  width: 35%;
+}
+footer{
+  display: flex;
+  justify-content: space-between;
+  background: -Webkit-linear-gradient(left top, #E3F2FD, #0D47A1);
+}
+.icons{
+  padding-top: 5px;
+  padding-left: 85px;
+}
+.icons img{
+  height: 55px;
+  width: 55px;
+  transition:all 2s ;/*this is used for specifying how many seconds or milliseconds a transition will take place*/
+}
+.icons img:hover{
+    transform: rotate(360deg);
+}
+.copy{
+  padding-top: 10px;
+  padding-right: 85px;
+}
+.copy p{
+  font-size: 19px;
+}
