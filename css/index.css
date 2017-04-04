@@ -3,6 +3,9 @@
   margin: 0;
 }
 header{
+  background-color: black;
+  color: white;
+  height: 190px;
   padding-top: 25px;
   display: flex;
   flex-direction: row;
@@ -30,6 +33,7 @@ nav{
 nav ul {
   display: flex;
   flex-direction: row;
+  padding-left: 280px;
 }
 nav ul li{
   height: 45px;

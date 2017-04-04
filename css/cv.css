@@ -1,0 +1,196 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+header{
+  background-color: black;
+  color: white;
+  height: 190px;
+  padding-top: 25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.name{
+  padding-left: 95px;
+}
+.name h2{
+  position: relative;
+  top: -19px;
+  font-family: 'Jim Nightshade', cursive;
+}
+.details{
+  padding-right: 95px;
+}
+.details p{
+  position: relative;
+  top: -10px;
+  font-family: 'Satisfy', cursive;
+}
+nav{
+  background: -webkit-linear-gradient(left top,#03A9F4, #00BCD4, #4D86AC);
+}
+nav ul {
+  display: flex;
+  flex-direction: row;
+    padding-left: 280px;
+}
+nav ul li{
+  height: 45px;
+  position: relative;
+  top: 13px;
+  padding-left: 125px;
+  list-style-type: none;
+    width: 85px;
+}
+nav ul li a{
+
+  text-decoration: none;
+  color:black;
+  font-size: 18px;
+}
+.active{
+  color:#FFFFFF;
+}
+section{
+  display: flex;
+  flex-direction: row;
+}
+.leftside{
+  width: 20%;
+  background-color: #9CACB2;
+  height: 650px;
+}
+.leftside img{
+  position: relative;
+  top: 50px;
+  left: 25%;
+  height: 145px;
+  width: 145px;
+  border-radius: 50%;
+  transition:all .6s;
+}
+.leftside img:hover{
+  transform: scale(1.3);
+}
+.contact{
+  width: 280px;
+  padding-top: 70px;
+}
+.leftside h2{
+  padding-left: 15%;
+  background-color: black;
+  color: white;
+  margin-left: 2%;
+  margin-right: 2%;
+    font-family: cursive;
+}
+.profile{
+  padding-top: 10px;
+  width: 280px;
+}
+.contact p{
+  padding-left: 28%;
+}
+.block{
+  width: 280px;
+  padding-left: 28%;
+}
+.rectangle{
+  height: 5px;
+  width: 150px;
+  background-color: white;
+}
+.value1{
+  background-color: black;
+  width: 120px;
+  height: 5px;
+}
+.value2{
+  background-color: black;
+  width: 130px;
+  height: 5px;
+}
+.value3{
+  background-color: black;
+  width: 100px;
+  height: 5px;
+}
+.value4{
+  background-color: black;
+  width: 80px;
+  height: 5px;
+}
+.skills{
+  width: 280px;
+  padding-top: 10px;
+}
+.skills p{
+  padding-left: 28%;
+  padding-top: 10px;
+}
+.java{
+  width: 280px;
+  padding-top: 10px;
+}
+.java p{
+  padding-left: 28%;
+  padding-top: 10px;
+}
+.photoshop{
+  width:280px;
+  padding-top: 10px;
+}
+.photoshop p{
+  padding-left: 28%;
+  padding-top: 10px;
+}
+.achievements{
+  width: 280px;
+  padding-top: 10px;
+}
+.rightside{
+  width: 75%;
+}
+.rightside h2{
+  padding-left: 35%;
+  font-family: cursive;
+  font-size: 20px;
+}
+.heading{
+  height: 100px;
+}
+.work{
+  height: 200px;
+}
+.education{
+}
+.education p{
+  font-size: 20px;
+  text-align: center;
+  padding-top: 5px;
+}
+footer{
+  display: flex;
+  justify-content: space-between;
+  background: -Webkit-linear-gradient(left top, #E3F2FD, #0D47A1);
+}
+.icons{
+  padding-top: 5px;
+  padding-left: 85px;
+}
+.icons img{
+  height: 55px;
+  width: 55px;
+  transition:all 2s ;
+}
+.icons img:hover{
+    transform: rotate(360deg);
+}
+.copy{
+  padding-top: 10px;
+  padding-right: 85px;
+}
+.copy p{
+  font-size: 19px;
+}
