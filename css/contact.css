@@ -1,0 +1,216 @@
+/*NAME-NITANT MAHAJU
+UN ID-16441723*/
+*{
+  padding: 0;
+  margin: 0;
+}
+header{
+  background-color: black;
+  color: white;
+  padding-top: 25px;
+  display: flex;
+  height: 190px;
+  flex-direction: row;
+  justify-content: space-between;/*this used for giving space between two content*/
+}
+.name{
+  padding-left: 95px;/*this is used to give space from the left side*/
+}
+.name h2{
+  position: relative;
+  top: -19px;
+  font-family: 'Jim Nightshade', cursive;/*this is a google font*/
+}
+.name a{
+  text-decoration: none;
+  color: white;
+}
+.details{
+  padding-right: 95px;/*this is used to give space from the rightside*/
+}
+.details p{
+  position: relative;
+  top: -10px;
+  font-family: 'Satisfy', cursive;
+}
+nav{
+  background: -webkit-linear-gradient(left top,#03A9F4, #00BCD4, #4D86AC);
+}
+nav ul {
+  display: flex;
+  flex-direction: row;
+  padding-left: 280px;/*this is used to give space from the left side*/
+}
+nav ul li{
+  height: 45px;
+  position: relative;
+  top: 13px;
+  padding-left: 125px;
+  list-style-type: none;/*this is used to remove the default bullets*/
+  width: 85px;
+}
+nav ul li a{
+
+  text-decoration: none;
+  color:black;
+  font-size: 18px;
+}
+.active{
+  color:#FFFFFF;
+}
+section{
+  background-color: #263238;
+  height: 520px;
+}
+.form{
+  position: relative;
+  left: 10%;
+  width: 80%;
+  height: 450px;
+  background-color: #37474F;
+}
+.form h1{
+  text-align: center;/*this is used to keep the text in center*/
+  font-size: 42px;
+  font-family: 'Englebert', sans-serif;
+  color: white;
+}
+.form h3{
+  font-size: 35px;
+  color: white;
+  text-align: center;
+}
+.horizontal{
+  width: 90%;
+  position: relative;
+  left: 4%;
+  border: 1px dotted #FFFFFF ;
+}
+input[type=text]{
+  height: 30px;
+  width: 350px;
+  border-radius: 7px;
+  padding-top: 5px;/*this is used to give space in the top*/
+}
+textarea{
+  border-radius: 7px;/*this is used to make the border corner round*/
+  height:150px;
+  width: 350px;
+}
+input[type=submit]{
+  cursor: pointer;/*when the cursor is hovered in the submit button it change in to pointer*/
+  border-radius: 6px;
+  background-color:grey;
+  height: 35px;
+  width: 100px;
+  position: relative;
+  left: 120px;
+}
+::-webkit-input-placeholder{
+  color: #BDBDBD;
+  padding-left: 15px;
+  padding-top: 15px;/*this is used to give space in the top*/
+}
+.main{
+  padding-top: 15px;
+  display: flex;
+  flex-direction: row;
+}
+.leftside{
+  padding-left: 5%;
+  width: 45%;
+}
+.rightside{
+  width: 50%;
+}
+.rightside p{
+  font-size: 22px;
+  color: white;
+}
+footer{
+  display: flex;
+  justify-content: space-between;
+  background: -Webkit-linear-gradient(left top, #E3F2FD, #0D47A1);
+}
+.icons{
+  padding-top: 5px;/*this is used to give space in the top*/
+  padding-left: 85px;/*this is used to give space from the left side*/
+}
+.icons img{
+  height: 55px;
+  width: 55px;
+  transition:all 2s ;
+}
+.icons img:hover{
+    transform: rotate(360deg);
+}
+.copy{
+  padding-top: 10px;/*this is used to give space in the top*/
+  padding-right: 85px;
+}
+.copy p{
+  font-size: 19px;/*this increases the size of the content*/
+}
+@media (max-width: 600px){
+  header{
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+  }
+  header h2{
+    position: relative;
+    left: -85px;
+  }
+  .details p{
+    padding-left: 10px;
+  }
+  nav ul{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    right: 400px;
+  }
+  section{
+    height: 620px;
+  }
+  .leftside{
+    padding-left: 0px;
+  }
+  .rightside{
+    position: relative;
+    top: 42px;
+    width: 100%;
+  }
+  .form{
+    left: 5%;
+  }
+  .first, .last{
+    padding-left: 5px;
+  }
+  textarea{
+    position: relative;
+    left: 5px;
+  }
+  input[type=text]{
+    width: 250px;
+  }
+    input[type=submit]{
+      position: relative;
+      top: 15px;
+      left: 65%;
+    }
+  textarea{
+    width: 250px;
+  }
+  .main{
+    display: flex;
+    flex-direction: column;
+  }
+  footer{
+    display: flex;
+    flex-direction: column;
+  }
+  .icons{
+    padding-left: 0px;
+  }
+}
