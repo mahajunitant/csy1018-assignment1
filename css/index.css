@@ -1,3 +1,5 @@
+/*NAME-NITANT MAHAJU
+UN ID-16441723*/
 *{
   padding: 0;
   margin: 0;
@@ -5,22 +7,26 @@
 header{
   background-color: black;
   color: white;
-  height: 190px;
   padding-top: 25px;
   display: flex;
-  flex-direction: row;
+  height: 190px;
+  flex-direction: row;/*this is used for keeping items side to side */
   justify-content: space-between;
 }
 .name{
   padding-left: 95px;
 }
 .name h2{
-  position: relative;
+  position: relative;/*this is used for specifying the type of positioning method used for an element */
   top: -19px;
   font-family: 'Jim Nightshade', cursive;
 }
+.name a{
+  text-decoration: none;
+  color: white;
+}
 .details{
-  padding-right: 95px;
+  padding-right: 95px;/*this is used for generating space around the content*/
 }
 .details p{
   position: relative;
@@ -32,7 +38,7 @@ nav{
 }
 nav ul {
   display: flex;
-  flex-direction: row;
+  flex-direction: row;/*this is used for keeping items side to side*/
   padding-left: 280px;
 }
 nav ul li{
@@ -41,10 +47,9 @@ nav ul li{
   top: 13px;
   padding-left: 125px;
   list-style-type: none;
-    width: 85px;
+  width: 85px;
 }
 nav ul li a{
-
   text-decoration: none;
   color:black;
   font-size: 18px;
@@ -54,16 +59,74 @@ nav ul li a{
 }
 section{
   height: 750px;
-  background-attachment: fixed;
+  background-attachment: fixed;/*this is used to keep the background image fixed*/
   background-size: cover;
   background-image: url("../images/h.jpg");
 }
 section h2{
   color: white;
   font-size: 52px;
-  padding-left: 25%;
-  padding-top: 6%;
-  font-family: 'Lobster Two', cursive;
+  padding-left: 30%;
+  font-family: 'Lobster Two', cursive
+}
+.blank{
+  position: relative;
+  left: 65%;
+  height: 550px;
+  width: 500px;
+  background-color: white;
+  box-shadow: 5px 5px 5px gray;/*this is used for attaching one or more shadow to an item*/
+  opacity: 0.7;
+  font-size: 50px;
+  font-family:'Englebert', sans-serif;
+  color: #263238;
+}
+.blank p{
+  font-size: 70px;
+  font-family:'Englebert', sans-serif;
+}
+.firstcircle, .secondcircle, .thirdcircle{
+  position: relative;
+  left: 50px;
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;/*this is simply used to add a round border to an item*/
+}
+.firstcircle{
+  background-color: #BF360C;
+}
+.circle1,.circle2, .circle3{
+  display: flex;
+  justify-content: space-between;/*this used for giving space between two content*/
+}
+.circle1 a{
+  text-decoration: none;
+  color: black;
+  position: relative;
+  top: 20px;
+  right: 28%;
+}
+.circle2 a{
+  text-decoration: none;
+  color: black;
+  position: relative;
+  top: 35px;
+  right: 24%;
+}
+.circle3 a{
+  text-decoration: none;
+  color: black;
+  position: relative;
+  top: 45px;
+  right: 17%;
+}
+.secondcircle{
+  background-color: #01579B;
+  top: 10px;
+}
+.thirdcircle{
+  background-color: #004D40;
+  top: 25px;
 }
 footer{
   display: flex;
@@ -71,16 +134,16 @@ footer{
   background: -Webkit-linear-gradient(left top, #E3F2FD, #0D47A1);
 }
 .icons{
-  padding-top: 5px;
-  padding-left: 85px;
+  padding-top: 5px;/*this is used to give space in the top*/
+  padding-left: 85px;/*this is used to give space from the left side*/
 }
 .icons img{
   height: 55px;
   width: 55px;
-  transition:all 2s ;
+  transition:all 2s ;/*this is used for specifying how many seconds or milliseconds a transition will take place*/
 }
 .icons img:hover{
-    transform: rotate(360deg);
+    transform: rotate(360deg);/*this is used for rotating the specified item */
 }
 .copy{
   padding-top: 10px;
@@ -88,4 +151,69 @@ footer{
 }
 .copy p{
   font-size: 19px;
+}
+@media (max-width: 600px){
+  header{
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+  }
+  header h2{
+    position: relative;
+    left: -85px;
+  }
+  .details p{
+    padding-left: 10px;
+  }
+  nav ul{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    right: 400px;
+  }
+  section{
+    height: 400px;
+    background-size: contain;
+  }
+  section h2{
+    font-size: 15px;
+    padding-left: 45px;
+  }
+  .blank{
+    width: 250px;
+    position:relative;
+    left: 20px;
+    height: 320px;
+  }
+  .blank h1{
+    font-size: 22px;
+  }
+  .firstcircle, .secondcircle, .thirdcircle{
+    height: 80px;
+    width: 80px;
+  }
+  .circle1 a, .circle2 a, .circle3 a{
+    width: 50%;
+  }
+  .circle1 p{
+    font-size: 22px;
+    padding-left: 80px;
+    width: 90%;
+  }
+  .circle2 p{
+    font-size: 22px;
+    padding-left: 80px;
+    width: 90%;
+  }
+  .circle3 p{
+    font-size: 22px;
+    padding-left:60px;
+  }
+  footer{
+    display: flex;
+    flex-direction: column;
+  }
+  .icons{
+    padding-left: 0px;
+  }
 }
