@@ -196,6 +196,9 @@ section{
   padding-left: 275px;
   padding-top: 5px;
 }
+.relevant h2{
+  padding-left: 125px;
+}
 footer{
   display: flex;
   justify-content: space-between;/*this used for giving space between two content*/
